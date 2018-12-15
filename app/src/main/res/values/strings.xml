@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">AndroidDataBinding</string>
+    
+    <!-- Login -->
+    <string name="login_username_hint">Username</string>
+    <string name="login_password_hint">Password</string>
+    <string name="login_login">Login</string>
+    <string name="login_failed">"Login Failed"</string>
+    <string name="login_dialog_title">Login</string>
+    <string name="login_dialog_message">Loading. Please wait&#8230;</string>
+
+    <!-- User List -->
+    <string name="user_list_no_user">No User</string>
 </resources>

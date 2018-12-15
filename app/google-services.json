@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "778081985260",
+    "firebase_url": "https://cardname-7f693.firebaseio.com",
+    "project_id": "cardname-7f693",
+    "storage_bucket": "cardname-7f693.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:778081985260:android:26f51bcb103f808a",
+        "android_client_info": {
+          "package_name": "com.example.navadroid.androiddatabinding"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "778081985260-9lm9t2aue9a2lqqmqadlj6p8m9f0or8s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCoUzR7mo1CUc_gKYELNyju4-ZBE2-5ST8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

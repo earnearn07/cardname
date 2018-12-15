@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Login -->
+    <dimen name="LoginLoginTextSize">24sp</dimen>
+    <dimen name="LoginUsernameHintTextSize">24sp</dimen>
+    <dimen name="LoginPasswordHintTextSize">24sp</dimen>
+
+    <!--User List-->
+    <dimen name="UserListProfileImageSize">60dp</dimen>
+    <dimen name="UserListNameTextSize">18sp</dimen>
+
+    <!-- Profile Detail Card -->
+    <dimen name="ProfileDetailCardProfileImageSize">150dp</dimen>
+    <dimen name="ProfileDetailCardNameTextSize">18sp</dimen>
+</resources>

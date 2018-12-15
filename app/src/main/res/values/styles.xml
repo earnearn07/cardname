@@ -1,11 +1,41 @@
 <resources>
 
-    <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
-        <!-- Customize your theme here. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <!-- Login -->
+    <style name="LoginUsernameStyle">
+        <item name="android:ems">10</item>
+        <item name="android:hint">@string/login_username_hint</item>
+        <item name="android:inputType">textPersonName</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textSize">@dimen/LoginUsernameHintTextSize</item>
+    </style>
+
+    <style name="LoginPasswordStyle">
+        <item name="android:ems">10</item>
+        <item name="android:hint">@string/login_password_hint</item>
+        <item name="android:inputType">textPassword</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textSize">@dimen/LoginPasswordHintTextSize</item>
+    </style>
+
+    <style name="LoginLoginStyle">
+        <item name="android:text">@string/login_login</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textSize">@dimen/LoginLoginTextSize</item>
+    </style>
+
+    <!-- User List -->
+    <style name="UserListNameStyle">
+        <item name="android:textSize">@dimen/UserListNameTextSize</item>
+    </style>
+
+    <!-- Profile Detail Card -->
+    <style name="ProfileDetailCardNameStyle">
+        <item name="android:textSize">@dimen/ProfileDetailCardNameTextSize</item>
+    </style>
 </resources>
