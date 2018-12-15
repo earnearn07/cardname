@@ -2,8 +2,6 @@ package com.example.navadroid.androiddatabinding.data.repository.impl;
 
 import android.arch.lifecycle.LiveData;
 import android.support.annotation.NonNull;
-import android.util.Log;
-
 import com.example.navadroid.androiddatabinding.data.entity.User;
 import com.example.navadroid.androiddatabinding.data.repository.LoginRepository;
 import com.google.firebase.database.DataSnapshot;
@@ -34,13 +32,11 @@ public class LoginRepositoryImpl implements LoginRepository {
                                 } else {
                                     setValue(null);
                                 }
-                                Log.d("Boss", dataSnapshot.getValue().toString());
                             }
 
                             @Override
                             public void onCancelled(@NonNull DatabaseError databaseError) {
                                 setValue(null);
-                                Log.d("boss", databaseError.getMessage());
                             }
                         });
             }
