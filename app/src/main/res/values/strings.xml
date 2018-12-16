@@ -1,14 +1,38 @@
 <resources>
     <string name="app_name">AndroidDataBinding</string>
-    
+
     <!-- Login -->
     <string name="login_username_hint">Username</string>
     <string name="login_password_hint">Password</string>
     <string name="login_login">Login</string>
+    <string name="login_register">Register</string>
     <string name="login_failed">"Login Failed"</string>
     <string name="login_dialog_title">Login</string>
     <string name="login_dialog_message">Loading. Please wait&#8230;</string>
 
+    <!-- Register -->
+    <string name="register_username_hint">Username</string>
+    <string name="register_password_hint">Password</string>
+    <string name="register_first_name_hint">First Name</string>
+    <string name="register_last_name_hint">Last Name</string>
+    <string name="register_image_hint">Image URL</string>
+    <string name="register_address_hint">Address</string>
+    <string name="register_tel_hint">Tel.</string>
+    <string name="register_register">Register</string>
+    <string name="register_empty_field">Please, fill all</string>
+    <string name="register_username_exists">Username exits</string>
+    <string name="register_registered_success">Registered Success</string>
+    <string name="register_registered_failed">Registered Failed</string>
+    <string name="register_dialog_title">Register</string>
+    <string name="register_dialog_message">Registering. Please wait&#8230;</string>
     <!-- User List -->
     <string name="user_list_no_user">No User</string>
+
+    <!-- Profile Detail Card -->
+    <string name="profile_detail_card_delete">Delete</string>
+    <string name="profile_detail_card_delete_failed">Delete Failed</string>
+    <string name="profile_detail_card_dialog_title">Delete</string>
+    <string name="profile_detail_card_dialog_message">You are removed</string>
+    <string name="profile_detail_card_progress_dialog_message">Deleting. Please wait&#8230;</string>
+    <string name="profile_detail_card_dialog_ok">OK</string>
 </resources>

@@ -29,6 +29,76 @@
         <item name="android:textSize">@dimen/LoginLoginTextSize</item>
     </style>
 
+    <style name="LoginRegisterStyle">
+        <item name="android:text">@string/login_register</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textSize">@dimen/LoginRegisterTextSize</item>
+    </style>
+
+    <!-- Register -->
+    <style name="RegisterRegisterStyle">
+        <item name="android:text">@string/register_register</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textSize">@dimen/RegisterRegisterTextSize</item>
+    </style>
+    <style name="RegisterUsernameStyle">
+        <item name="android:ems">10</item>
+        <item name="android:hint">@string/register_username_hint</item>
+        <item name="android:inputType">textPersonName</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textSize">@dimen/RegisterUsernameHintTextSize</item>
+    </style>
+
+    <style name="RegisterPasswordStyle">
+        <item name="android:ems">10</item>
+        <item name="android:hint">@string/register_password_hint</item>
+        <item name="android:inputType">textPassword</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textSize">@dimen/RegisterPasswordHintTextSize</item>
+    </style>
+
+    <style name="RegisterFirstNameStyle">
+        <item name="android:ems">10</item>
+        <item name="android:hint">@string/register_first_name_hint</item>
+        <item name="android:inputType">textPersonName</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textSize">@dimen/RegisterFirstNameHintTextSize</item>
+    </style>
+
+    <style name="RegisterLastNameStyle">
+        <item name="android:ems">10</item>
+        <item name="android:hint">@string/register_last_name_hint</item>
+        <item name="android:inputType">textPersonName</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textSize">@dimen/RegisterLastNameHintTextSize</item>
+    </style>
+
+
+    <style name="RegisterImageStyle">
+        <item name="android:ems">10</item>
+        <item name="android:hint">@string/register_image_hint</item>
+        <item name="android:inputType">textPersonName</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textSize">@dimen/RegisterImageHintTextSize</item>
+    </style>
+
+
+    <style name="RegisterAddressStyle">
+        <item name="android:ems">10</item>
+        <item name="android:hint">@string/register_address_hint</item>
+        <item name="android:inputType">textPersonName</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textSize">@dimen/RegisterAddressHintTextSize</item>
+    </style>
+
+    <style name="RegisterTelStyle">
+        <item name="android:ems">10</item>
+        <item name="android:hint">@string/register_tel_hint</item>
+        <item name="android:inputType">phone</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textSize">@dimen/RegisterTelHintTextSize</item>
+    </style>
+
     <!-- User List -->
     <style name="UserListNameStyle">
         <item name="android:textSize">@dimen/UserListNameTextSize</item>
@@ -37,5 +107,17 @@
     <!-- Profile Detail Card -->
     <style name="ProfileDetailCardNameStyle">
         <item name="android:textSize">@dimen/ProfileDetailCardNameTextSize</item>
+    </style>
+    <style name="ProfileDetailCardAddressStyle">
+        <item name="android:textSize">@dimen/ProfileDetailCardAddressTextSize</item>
+    </style>
+    <style name="ProfileDetailCardTelStyle">
+        <item name="android:textSize">@dimen/ProfileDetailCardTelTextSize</item>
+    </style>
+    <style name="ProfileDetailCardDeleteStyle">
+        <item name="android:textSize">@dimen/ProfileDetailCardDeleteTextSize</item>
+        <item name="android:text">@string/profile_detail_card_delete</item>
+        <item name="android:textColor">@color/profileDetailCardDelete</item>
+        <item name="android:visibility">invisible</item>
     </style>
 </resources>

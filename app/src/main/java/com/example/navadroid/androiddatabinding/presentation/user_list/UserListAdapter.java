@@ -47,12 +47,18 @@ public class UserListAdapter extends RecyclerView.Adapter<UserListAdapter.ViewHo
         ImageView ivProfile = holder.view.findViewById(R.id.ivProfile);
         showImage(ivProfile, image);
 
+        final String username = user.getUsername();
+        final String address = user.getAddress();
+        final String tel = user.getTel();
         holder.view.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(context, ProfileDetailCardActivity.class);
+                intent.putExtra("username", username);
                 intent.putExtra("name", name);
                 intent.putExtra("image", image);
+                intent.putExtra("address", address);
+                intent.putExtra("tel", tel);
                 context.startActivity(intent);
             }
         });

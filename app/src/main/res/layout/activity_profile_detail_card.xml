@@ -8,6 +8,7 @@
     app:cardCornerRadius="8dp"
     app:cardElevation="4dp"
     app:contentPadding="16dp"
+    app:cardBackgroundColor="@color/background"
     tools:context=".presentation.profile_detail_card.ProfileDetailCardActivity">
 
     <android.support.constraint.ConstraintLayout
@@ -35,6 +36,38 @@
             app:layout_constraintEnd_toEndOf="@+id/ivProfile"
             app:layout_constraintStart_toStartOf="@+id/ivProfile"
             app:layout_constraintTop_toBottomOf="@+id/ivProfile" />
+
+        <TextView
+            android:id="@+id/tvAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="32dp"
+            style="@style/ProfileDetailCardAddressStyle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvName" />
+
+        <TextView
+            android:id="@+id/tvTel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            style="@style/ProfileDetailCardTelStyle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvAddress" />
+
+        <TextView
+            android:id="@+id/tvDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            style="@style/ProfileDetailCardDeleteStyle"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
     </android.support.constraint.ConstraintLayout>
 
 </android.support.v7.widget.CardView>

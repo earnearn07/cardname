@@ -2,8 +2,19 @@
 <resources>
     <!-- Login -->
     <dimen name="LoginLoginTextSize">24sp</dimen>
+    <dimen name="LoginRegisterTextSize">24sp</dimen>
     <dimen name="LoginUsernameHintTextSize">24sp</dimen>
     <dimen name="LoginPasswordHintTextSize">24sp</dimen>
+
+    <!-- Register -->
+    <dimen name="RegisterRegisterTextSize">24sp</dimen>
+    <dimen name="RegisterUsernameHintTextSize">24sp</dimen>
+    <dimen name="RegisterPasswordHintTextSize">24sp</dimen>
+    <dimen name="RegisterFirstNameHintTextSize">24sp</dimen>
+    <dimen name="RegisterLastNameHintTextSize">24sp</dimen>
+    <dimen name="RegisterImageHintTextSize">24sp</dimen>
+    <dimen name="RegisterAddressHintTextSize">24sp</dimen>
+    <dimen name="RegisterTelHintTextSize">24sp</dimen>
 
     <!--User List-->
     <dimen name="UserListProfileImageSize">60dp</dimen>
@@ -12,4 +23,7 @@
     <!-- Profile Detail Card -->
     <dimen name="ProfileDetailCardProfileImageSize">150dp</dimen>
     <dimen name="ProfileDetailCardNameTextSize">18sp</dimen>
+    <dimen name="ProfileDetailCardAddressTextSize">18sp</dimen>
+    <dimen name="ProfileDetailCardTelTextSize">18sp</dimen>
+    <dimen name="ProfileDetailCardDeleteTextSize">24dp</dimen>
 </resources>

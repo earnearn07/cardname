@@ -17,7 +17,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".presentation.profile_detail_card.ProfileDetailCardActivity" />
-        <activity android:name=".presentation.user_list.UserListActivity"></activity>
+        <activity android:name=".presentation.user_list.UserListActivity" />
+        <activity android:name=".presentation.register.RegisterActivity"></activity>
     </application>
 
 </manifest>

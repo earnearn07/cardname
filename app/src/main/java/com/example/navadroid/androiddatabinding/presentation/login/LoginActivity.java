@@ -4,13 +4,16 @@ import android.app.Activity;
 import android.app.ProgressDialog;
 import android.arch.lifecycle.Observer;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 import com.example.navadroid.androiddatabinding.R;
 import com.example.navadroid.androiddatabinding.data.entity.User;
+import com.example.navadroid.androiddatabinding.presentation.register.RegisterActivity;
 import com.example.navadroid.androiddatabinding.presentation.user_list.UserListActivity;
 
 public class LoginActivity extends AppCompatActivity {
@@ -23,8 +26,19 @@ public class LoginActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+        initView();
         observeView();
         observeData();
+    }
+
+    private void initView() {
+        TextView tvRegister = findViewById(R.id.tvRegister);
+        tvRegister.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                navigateTo(new RegisterActivity());
+            }
+        });
     }
 
     //observe view to show progress dialog before data is coming from model
@@ -49,6 +63,7 @@ public class LoginActivity extends AppCompatActivity {
                 if (user != null) {
                     if (etUsername.getText().toString().toLowerCase().equals(user.getUsername())
                             && etPassword.getText().toString().toLowerCase().equals(user.getPassword())) {
+                        saveUserData();
                         navigateTo(new UserListActivity());
                     } else {
                         showErrorMessage();
@@ -83,5 +98,11 @@ public class LoginActivity extends AppCompatActivity {
         etUsername = findViewById(R.id.etUsername);
         etPassword = findViewById(R.id.etPassword);
         viewModel.login(etUsername.getText().toString().toLowerCase());
+    }
+
+    public void saveUserData() {
+        SharedPreferences.Editor editor = getSharedPreferences("user", MODE_PRIVATE).edit();
+        editor.putString("username", etUsername.getText().toString());
+        editor.apply();
     }
 }
